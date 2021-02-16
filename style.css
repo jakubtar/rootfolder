@@ -96,103 +96,192 @@ input, select {
 }
 
 /* MY CODE */
-a  {
-    text-decoration: none;   
+
+
+
+* {
+    text-decoration: none;
+}
+
+
+/* index */
+.logo {
+    font-family: 'Press Start 2P';
+    color: #111;
+    font-size: 45px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+}
+
+header nav ul {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+    font-family: 'Poppins';
+    color: #111;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 10px;
+    list-style: none;
+    font-size: 22px;
+    font-family: 'Poppins';
+    color: #111;
+}
+
+header nav ul li a{
+    font-size: 22px;
+    font-family: 'Poppins';
+    color: #111;
+}
+
+header .memy {
+    display: none;
 }
 
 body {
     background-color:#f3f3f3;
     color: #111;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Lexand Mega';
     font-size: 16px;
     line-height: 22px;
     text-decoration: none;
     word-spacing: 10px;
 }
-.wrapper {
-    margin: 0 auto;
-    width: 80%;
-    
-    
-    }
-.menuwrapper{
-    margin: 0 auto;
-    width: 80%;
-    font-family:'Lexend Mega', sans-serif;
-    }
 
-nav {
+.index-banner {
     width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url('img/doge.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+.vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.index-banner h2 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 60px;
+    line-height: 65px;
+    text-shadow: 2px 2px 8px #111;
+    font-family: 'Poppins';
+}
+
+.index-banner h1 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 40px;
+    text-shadow: 4px 4px 16px #111;
+    font-family: 'Lexand Mega';
+}
+
+.index-links div {
+    margin: 16px 16px 0;
+    width: calc(100% - 32px);
     height: 100px;
-    background-color: white;
-    background-size: 70%;
-    line-height: 100px;
+    background-color: rgb(136, 136, 136);
 }
 
-ul li {
-    display: inline-flex;
-}
 
-ul li a {
-    display: block;
-    font-size: 14px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.index-links div h3 {
+    color: #111;
+    text-align: center;
+    font-size: 28px;
     font-weight: 600;
-    color:#111;
-    padding: 0 20px;
-}
-
-ul li a:hover {
-    text-decoration: underline;
-    box-shadow: black;
-}
-
-.sm-links {
-    display: grid;
-    color: #111;
-}
-.content {
-    margin: 0 auto;
-    width: 1200px;
-    color: #111;
-    height: 100%;
-    background-color: #1e1e1e;
-    line-height: 24px;
-}
- 
-
-.title {
-    font-size: 22px;
-    color: #111;
-}
-.img-residentsleeper {
-    width: 75%;
-   height: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-.videowrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0px;
-}
-.videowrapper iframe {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    height: 90%;
-    width: 90%;
+    line-height: 100px;
+    font-family: 'Poppins';
     
 }
-@media only screen and (min-width: 760px) {
-    .menuwrapper {
-        font-size: 30px;
+
+/* FOOTER */
+
+footer {
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    background-color: #111;
+    overflow: hidden;
+}
+
+footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+}
+
+footer ul li a {
+font-family: "Lexand Mega";
+font-size: 24px;
+color: #fff;
+line-height: 30px;
+}
+
+
+.ciekawostki {
+    display: none;
+}
+
+.footer-sm {
+    width: 50px;
+    float: right;
+}
+
+.footer-sm img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.footer-links-main {
+    font-family: "Lexand Mega";
+    font-size: 24px;
+    color: #fff;
+    line-height: 40px;
+    text-decoration: none;
+    list-style: none;
+}
+@media only screen and (min-width: 1000px) {
+    .logo {
+        text-align: left;
+        margin: 31px 0;
+        padding: 0px 20px 0px 40px;
+        border-right: 3px solid #111;
+        float: left;
+        line-height: 30px;
+    }
+    header nav ul {
+        margin: 30px 0px;
+        float: left;
+    }
+
+    
+    header nav ul li a{
+        line-height: 30px;
+    }
+    
+    header .memy {
         display: block;
-        width: 100%;
-        padding-bottom: 30px;}
-    
+        font-family: 'Poppins';
+        font-size: 24px;
+        color: #111;
+        float: right;
+        line-height: 50px;
+        border: 1px solid #111;
+        margin-right: 40px;
+        margin-top: 20px;
+        padding: 0 20px;
+    }
 }
