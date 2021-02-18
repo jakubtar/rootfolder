@@ -97,22 +97,19 @@ input, select {
 
 /* MY CODE */
 
-
-
 * {
     text-decoration: none;
 }
-
 
 /* index */
 .logo {
     font-family: 'Press Start 2P';
     color: #111;
-    font-size: 45px;
+    font-size: 30px;
     display: block;
     text-align: center;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 header {
@@ -128,11 +125,11 @@ header nav ul {
     color: #111;
 }
 
-header nav ul li{
+header nav ul li {
     display: inline-block;
     padding: 0 10px;
     list-style: none;
-    font-size: 22px;
+    font-size: 20px;
     font-family: 'Poppins';
     color: #111;
 }
@@ -149,12 +146,7 @@ header .memy {
 
 body {
     background-color:#f3f3f3;
-    color: #111;
-    font-family: 'Lexand Mega';
-    font-size: 16px;
-    line-height: 22px;
-    text-decoration: none;
-    word-spacing: 10px;
+
 }
 
 .index-banner {
@@ -206,7 +198,6 @@ body {
     font-weight: 600;
     line-height: 100px;
     font-family: 'Poppins';
-    
 }
 
 /* FOOTER */
@@ -216,6 +207,7 @@ footer {
     padding: 40px 40px;
     background-color: #111;
     overflow: hidden;
+    margin-top: 20px;
 }
 
 footer ul {
@@ -225,15 +217,9 @@ footer ul {
 }
 
 footer ul li a {
-font-family: "Lexand Mega";
-font-size: 24px;
-color: #fff;
-line-height: 30px;
-}
-
-
-.ciekawostki {
-    display: none;
+    font-size: 22px;
+    font-family: 'Poppins';
+    color: #fff;
 }
 
 .footer-sm {
@@ -245,14 +231,13 @@ line-height: 30px;
     width: 100%;
     margin-bottom: 10px;
 }
-.footer-links-main {
-    font-family: "Lexand Mega";
-    font-size: 24px;
-    color: #fff;
-    line-height: 40px;
-    text-decoration: none;
-    list-style: none;
+
+.ciekawostki {
+    display: none;
 }
+
+
+
 @media only screen and (min-width: 1000px) {
     .logo {
         text-align: left;
