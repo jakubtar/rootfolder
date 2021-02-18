@@ -208,22 +208,30 @@ footer {
     background-color: #111;
     overflow: hidden;
     margin-top: 20px;
+    color: #fff;
+    font-size: 40px;
 }
 
 footer ul {
     width: fit-content;
     float: left;
     padding-left: 20px;
+    list-style: none;
+}
+footer ul li {
+    display: block;
+    list-style: none;
 }
 
 footer ul li a {
     font-size: 22px;
     font-family: 'Poppins';
     color: #fff;
+    
 }
 
 .footer-sm {
-    width: 50px;
+    width: 60px;
     float: right;
 }
 
