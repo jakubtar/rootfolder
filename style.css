@@ -149,7 +149,7 @@ header nav ul li a{
     color: #111;
 }
 
-header .memy {
+header .piesely {
     display: none;
 }
 
@@ -249,6 +249,7 @@ body {
     .index-links div h3 {
         line-height: 230px;
     }
+    
 }
 @media only screen and (min-width: 1300px) {
     .index-banner {
@@ -259,11 +260,22 @@ body {
 /* PIESEŁY */
 .piesely-zdjecia img {
     display: block;
-    width: calc(33% - 5px);
-    height: 400px;
+    width: calc(25% - 5px);
+    height: 150px;
     float: left;
-    margin: 3px 3px 5px 5px;
-    border-radius: 15px;
+    margin: 3px 3px;
+    margin-left: 30px;
+    border-radius: 25px;
+    border: black solid 1px;
+    
+}
+.piesely-zdjecia h2 {
+    font-family: 'Press Start 2P';
+    font-size: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    text-transform: uppercase;
 }
 /* FOOTER */
 
@@ -346,5 +358,16 @@ footer ul li a {
         font-family: 'Poppins';
         text-transform: uppercase;
     }
-    
+    .piesely-zdjecia img {
+        display: block;
+        width: calc(30% - 10px);
+        height: 400px;
+        float: left;
+        margin: 10px 5px;
+        border-radius: 5;
+        padding-left: 10px;
+    }
+    .piesely-zdjecia h2 {
+        margin-left: 360px;
+    }
 }
