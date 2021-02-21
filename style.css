@@ -211,7 +211,7 @@ body {
 @media only screen and (min-width: 1000px) {
 
     .wrapper {
-        width: 1000px;
+        width: 50%;
         margin: 0 auto;
     }
 
@@ -259,12 +259,12 @@ body {
 }
 /* PIESEŁY */
 .piesely-zdjecia img {
-    display: block;
-    width: calc(25% - 5px);
-    height: 150px;
-    float: left;
-    margin: 3px 3px;
-    margin-left: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-between;
+    width: 100%;
     border-radius: 25px;
     border: black solid 1px;
     
@@ -359,13 +359,7 @@ footer ul li a {
         text-transform: uppercase;
     }
     .piesely-zdjecia img {
-        display: block;
-        width: calc(30% - 10px);
-        height: 400px;
-        float: left;
-        margin: 10px 5px;
-        border-radius: 5;
-        padding-left: 10px;
+        
     }
     .piesely-zdjecia h2 {
         margin-left: 360px;
