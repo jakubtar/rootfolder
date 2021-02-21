@@ -102,6 +102,10 @@ input, select {
 }
 
 /* index */
+main {
+padding-top: 100px;
+}
+
 .logo {
     font-family: 'Press Start 2P';
     color: #111;
@@ -113,8 +117,13 @@ input, select {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     width: 100%;
     height: 100px;
+    background-color: #fff;
 }
 
 header nav ul {
@@ -199,7 +208,63 @@ body {
     line-height: 100px;
     font-family: 'Poppins';
 }
+@media only screen and (min-width: 1000px) {
 
+    .wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .index-banner {
+        height: 450px;
+        background-position: 0 -300px;
+    }
+    
+    .index-banner h1 {
+        display: block;
+        width: 580px;
+        margin: 0 auto;    
+        text-shadow: #000;
+    }
+
+    .index-boxlink-square {
+        width: calc(33% - 20px) !important;
+    }
+
+    .index-boxlink-rectangle {
+        width: calc(67% - 20px) !important;
+    }
+
+    .index-links div {
+        margin: 10px 10px 0;
+        height: 230px;
+        background-color: rgb(136, 136, 136);
+        float: left;
+    }
+
+    .index-links {
+        overflow: hidden;
+    }
+
+    .index-links div h3 {
+        line-height: 230px;
+    }
+}
+@media only screen and (min-width: 1300px) {
+    .index-banner {
+        height: 500px;
+        background-position: 0 -500px;
+    }
+}
+/* PIESEŁY */
+.piesely-zdjecia img {
+    display: block;
+    width: calc(33% - 5px);
+    height: 400px;
+    float: left;
+    margin: 3px 3px 5px 5px;
+    border-radius: 15px;
+}
 /* FOOTER */
 
 footer {
@@ -231,7 +296,7 @@ footer ul li a {
 }
 
 .footer-sm {
-    width: 60px;
+    width: 28px;
     float: right;
 }
 
@@ -243,7 +308,6 @@ footer ul li a {
 .ciekawostki {
     display: none;
 }
-
 
 
 @media only screen and (min-width: 1000px) {
@@ -265,7 +329,7 @@ footer ul li a {
         line-height: 30px;
     }
     
-    header .memy {
+    header .piesely {
         display: block;
         font-family: 'Poppins';
         font-size: 24px;
@@ -277,4 +341,10 @@ footer ul li a {
         margin-top: 20px;
         padding: 0 20px;
     }
+    .ciekawostki {
+        display: block;
+        font-family: 'Poppins';
+        text-transform: uppercase;
+    }
+    
 }
