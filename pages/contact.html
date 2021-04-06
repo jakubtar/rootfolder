@@ -27,6 +27,41 @@
       </nav>   
     </header>
     <main>
+      <form action="contactform.php" method="POST">
+        <input type="text" name="email" placeholder="Write your email..">
+        <input type="text" name="email" value="Write your email..">
+        <div class="input">
+        Male:<input type="radio" name="gender" value="Male">
+        Female:<input type="radio" name="gender" value="Female">
+        Other:<input type="radio" name="gender" value="Other" checked>
+      </div>
+        <input type="password" name="pwd" placeholder="password">
+        <textarea name="msg"  placeholder="Write a message!">asdasdsa</textarea>
+        <select name="car" >
+          <option value="None">None</option>
+          <option value="car1">Ford</option>
+          <option value="car2">Mercedes</option>
+          <option value="car3">Opel</option>
+        </select>
+        <button type="sumbit" name="submit">Submit</button>
+        <table>
+          <tr>
+            <th>First name:</th>
+            <th>Last name:</th>
+            <th>Gender:</th>
+          </tr>
+          <tr>
+            <td>Jakub</td>
+            <td>Tarnowski</td>
+            <td>Male</td>
+          </tr>
+          <tr>
+            <td>Norbert</td>
+            <td>Gierczak</td>
+            <td>Ork</td>
+          </tr>
+        </table>
+      </form>
     <section class="container">
         <div class="item">
           <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
@@ -87,4 +122,5 @@
       </footer>
   </div>
   </body>
+  
 </html>
